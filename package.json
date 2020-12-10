@@ -20,8 +20,10 @@
   "scripts": {
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "client": "cd frontend && npm  start",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "build":"cd frontend && npm install && npm run build "
   },
   "author": "shubham tiwari",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {"node":"12.4.0", "npm": "6.9.0"}
 }
